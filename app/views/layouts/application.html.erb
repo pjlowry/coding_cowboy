@@ -46,8 +46,7 @@
 </head>
 
 <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+
 
   <body onload="initialize()" class="">
 
@@ -68,53 +67,7 @@
       </ul>
       
       
-      <!-- Home Page-->
-      <div id="index">    
-      
-
-          <a href="#" id="arrow_left"><div title="designova" alt="reva"><%= image_tag "arrow_left.png" %></a></div>
-           <a href="#" id="arrow_right"><div title="designova" alt="reva"><%= image_tag "arrow_right.png" %></a></div>
-          
-          <!-- Full Screen Slider-->
-          <div id="maximage" class="mc-cycle" style="width: 334px; height: 508px; display: block;">
-           
-              
-          <div class="mc-image " title="reva" style="background-image: url(file://localhost/Users/dorritgeshuri/Desktop/REVA-Retro-Parallax-Responsive-Theme/reva%20v1.0/images/bg/bg1.jpg); position: absolute; top: 0px; left: 0px; display: none; z-index: 3; opacity: 0; width: 334px; height: 508px;" data-href="">
-                  
-                  <div class="pattern"></div>
-                  <div class="in-slide-content" style="display: block;">
-                      <div class="in-slide-inner">
-                          <h1>Reva</h1>
-                          <img title="designova" alt="reva" src="images/legends/star.png">
-                          <p>Creative Theme</p>
-                      </div>
-                  </div>
-              </div><div class="mc-image " title="reva" style="background-image: url(file://localhost/Users/dorritgeshuri/Desktop/REVA-Retro-Parallax-Responsive-Theme/reva%20v1.0/images/bg/bg2.jpg); position: absolute; top: 0px; left: 0px; display: none; z-index: 3; width: 334px; height: 508px; opacity: 0;" data-href="">
-                  
-                  <div class="pattern"></div>
-                  <div class="in-slide-content" style="display: block;">
-                      <div class="in-slide-inner">
-                          <h1>Retro</h1>
-                          <img title="designova" alt="reva" src="images/legends/star.png">
-                          <p>You're gonna love it</p>
-                      </div>
-                  </div>
-              </div><div class="mc-image " title="reva" style="background-image: url(file://localhost/Users/dorritgeshuri/Desktop/REVA-Retro-Parallax-Responsive-Theme/reva%20v1.0/images/bg/bg3.jpg); position: absolute; top: 0px; left: 0px; display: block; z-index: 4; width: 334px; height: 508px; opacity: 1;" data-href="">
-                  
-                  <div class="pattern"></div>
-                  <div class="in-slide-content" style="display: block;">
-                      <div class="in-slide-inner">
-                          <h1>Coding Cowboy</h1>
-                          <img title="designova" alt="reva" src="images/legends/star.png">
-                          <p>Easy to use and edit</p>
-                      </div>
-                  </div>
-              </div></div>
-          <!--/Full Screen Slider-->
-          
-
-      </div>
-      <!--/Home Page-->
+      <%= yield %>
       
       
       <!-- Navigation-->
@@ -125,7 +78,7 @@
               <li class="links" style="display: none;">
                   <a id="home-linker" href="#index">Home</a>
               </li>
-              <li class="links current" style="display: none;">
+              <li class="links" style="display: none;">
                   <a id="about-linker" href="#about">About</a>
               </li>
               <li class="links" style="display: none;">
@@ -959,7 +912,6 @@
 
   <div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div></body>
 
-<%= yield %>
 
 </body>
 </html>

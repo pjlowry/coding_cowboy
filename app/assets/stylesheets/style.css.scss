@@ -203,7 +203,7 @@ p
 #navigation
 {
 	background:url(../images/page-bg/nav-bg.png) repeat;
-	bottom:-3px;
+	top:-3px;
 	height:80px;
 	position:absolute;
 	width:100%;
@@ -248,7 +248,7 @@ p
 {
 	font-family:"sosa";
 	color:#557F7D;
-	content:" e ";
+	content:" * ";
 	font-size:22px;
 	padding-left:10px;
 }
@@ -262,7 +262,7 @@ p
 {
 	color:#fff;
 	font-family: 'Lobster', cursive;
-	text-shadow:-2px 3px 1px #847557;
+	text-shadow:-2px 3px 1px;
 	font-size:24px;
 	padding:3px 6px;
 	text-decoration:none;
@@ -638,7 +638,7 @@ font-weight: normal;
 	margin-top:20px;
 	font-family: 'Droid Serif', serif;
     line-height: 58px;
-	background: url('../images/elements/ribbon.png') center center no-repeat !important;
+	background: url('images/elements/ribbon.png') center center no-repeat !important;
 }
 
 .t-prev
